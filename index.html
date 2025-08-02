@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Stock Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Stock Tracker</h1>
+
+    <input type="text" id="symbolInput" placeholder="Enter Stock Symbol (e.g., AAPL)">
+    <button onclick="getStockData()">Search</button>
+
+    <div class="metrics">
+      <p><strong>Price:</strong> <span id="price">--</span></p>
+      <p><strong>High:</strong> <span id="high">--</span></p>
+      <p><strong>Low:</strong> <span id="low">--</span></p>
+    </div>
+
+    <canvas id="stockChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
